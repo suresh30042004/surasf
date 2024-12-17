@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Agu+Display&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Agu+Display&family=Bangers&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Agu+Display&family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Agu+Display&family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Agu+Display&family=Bangers&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Agu+Display&family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Agu+Display&family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#bn{
+    font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
+#ds{
+  position:sticky;
+  top: 0;
+    background-color: aliceblue;
+    z-index: 1000;
+}
+#if,#tf{
+    font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* <-----slider---> */
+.slide-1{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/cover1.jpg);
+}
+.slide-2{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/cover2.jpg);
+}
+.slide-3{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/cover4.jpg);
+}
+.bg-cover{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ========HERO======= */
+#ff{
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+#sf{
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+#tb,#cu,#sm{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ============NEW ARRIVAL======== */
+#af{
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+#bw{
+  margin-top: 40px;
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+}
+#cart{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+#like{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.card img{
+  transition: 1s;
+}
+.inner{
+  overflow: hidden;
+}
+.card img:hover{
+  transform: scale(1.5);
+  transition: 1s;
+}  
+/* ========contact us======== */
+#stf{
+
+  font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
+#Contact{
+background-color: aliceblue;
+}
+#smi{
+   font-size: 50px;
+   align-content: center;
+}
+#insta:hover{
+ color:rgb(230, 98, 88);
+}
+#wa:hover{
+  color: green;
+}
+#tm:hover{
+  color: skyblue;
+}
+#fb:hover{
+  color: rgb(52, 125, 235);
+}
