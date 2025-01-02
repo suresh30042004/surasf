@@ -27,6 +27,11 @@
   font-style: italic;
 }
 
+svg{
+  width: 80px;
+  height: 40px;
+}
+
 /* <-----slider---> */
 .slide-1{
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/cover1.jpg);
