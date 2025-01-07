@@ -6,7 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Agu+Display&family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Agu+Display&family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+body{
+  cursor:url("/image/cursor/newcursor.png");
+}
 #bn{
     font-family: "Agu Display", serif;
   font-optical-sizing: auto;
@@ -15,29 +17,19 @@
   font-variation-settings:
     "MORF" 0;
 }
-#ds{
-  position:sticky;
-  top: 0;
-    background-color: aliceblue;
-    z-index: 1000;
-}
+
 #if,#tf{
     font-family: "Poppins", serif;
   font-weight: 400;
   font-style: italic;
 }
 
-svg{
-  width: 80px;
-  height: 40px;
-}
-
 /* <-----slider---> */
 .slide-1{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/cover1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/sura\ 2.png);
 }
 .slide-2{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/cover2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/sura.png);
 }
 .slide-3{
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,0.5)),url(image/cover/cover4.jpg);
@@ -76,7 +68,7 @@ svg{
 
 }
 #bw{
-  margin-top: 40px;
+  margin-top: 21px;
   font-family: "Rubik Bubbles", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -88,19 +80,212 @@ svg{
   font-size: 20px;
 }
 #like{
-  margin-left: 15px;
-  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 70px;
+  font-size: 25px;
+}
+#like2{
+  margin-top: 0px;
+  margin-left: 70px;
+  font-size: 25px;
+}
+.star{
+  font-size: 25px;
+}
+.star2{
+  font-size: 22px;
 }
 .card img{
   transition: 1s;
+ 
 }
 .inner{
   overflow: hidden;
+ 
 }
+/* =========cart items======= */
+button{
+  border-radius:30px;
+  margin-left: 5.25rem;
+}
+
+#stick{
+  position:fixed;
+  top: 0;
+  background-color:#f0f8ff;
+  z-index: 20000;
+  width: 100%;
+} 
+.cart{
+  position: fixed; 
+  top: 109px;
+  right: 3px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: floatCart 2s infinite ease-in-out;
+}
+
+.cart svg {
+  transition: transform 0.3s ease;
+  color: #ffffff;
+  background-image: url(/image/cart/cart-bg-3.webp);
+  border-radius: 12px;
+  position: relative;
+}
+
+.cart:hover svg {
+  transform: scale(1.1);
+}
+.cart span{
+  background-color:green;
+  width: 20px;
+  height: 21px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  text-align: center;
+  z-index: 200;
+  color:white;
+  font-weight: 400;
+}
+
+
+
+
+/* =====adding in cart page==== */
+.cart-index{
+  position: fixed;
+  top: 0;
+  right: -150%;
+  width: 500px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px;
+  background-image: url(/image/cart/sura\ fashion2\ \(1\).png);
+  background-repeat:no-repeat;
+  background-position: center;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.253);
+}
+
+
+
+.cart-box img{
+ width: 100px;
+ object-fit: cover;
+ border: 2px solid rgba(0, 0, 0, 0.534);
+ padding: 5px;
+}
+.cart-title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.596);
+}
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+  padding-bottom: 10px;
+
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;
+}
+.price-box{
+  display: flex;
+  justify-content: space-between;
+}
+.cart-product-title{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color:black;
+}
+.cart-price{
+  font-weight: 600;
+}
+.cart-quantity{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-remove{
+  color: red;
+  font-size: 25px;
+  cursor:pointer;
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+.total-title{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.total-price{
+ margin-left: 0.5rem;
+ font-weight: 600;
+}
+.btn-buy{
+  padding: 12px 20px;
+  background-color: #43BDCD;
+  color: white;
+  border-radius: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#cart-close{
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+/* =========== Keyframes for animation ========= */
+@keyframes floatCart {
+  0%, 100% {
+    transform: translateY(0); /* Original position */
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .card img:hover{
   transform: scale(1.5);
   transition: 1s;
 }  
+
+.cart-active{
+  right: 0px;
+  transition: 0.1s;
+  z-index: 3000;
+}
+
+
+#Store{
+   background-image: url(/image/cart/store-bg-3.webp);
+   background-repeat: repeat-x;
+}
+#Arrivals{
+
+}
+.hellowen{
+  right: 740px;
+}
+
 /* ========contact us======== */
 #stf{
 
@@ -115,18 +300,21 @@ svg{
 background-color: aliceblue;
 }
 #smi{
-   font-size: 50px;
-   align-content: center;
+ gap: 50px;
 }
-#insta:hover{
- color:rgb(230, 98, 88);
+#smi a{
+  
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  place-items:center;
+
 }
-#wa:hover{
-  color: green;
-}
-#tm:hover{
-  color: skyblue;
-}
-#fb:hover{
-  color: rgb(52, 125, 235);
+#smi  i{
+  font-size: 50px;
+  height: 32px;
+  
 }
